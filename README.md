@@ -14,4 +14,5 @@
 7. On you browser open http://127.0.0.1:5000/ i.e the default flask web server port.
 8. you can tail your logs on CMD
 
-*Happy coding and don't forget to send PR of whatever you managed to develop on top of this code.
+
+

@@ -10,9 +10,6 @@
 3. Open your CMD
 4. cd into the project directory
 5. Run the following command: pip install -r requirement.txt
-6. Once done while still in your project's root directory run the following command: flask run
-7. On you browser open http://127.0.0.1:5000/ i.e the default flask web server port.
-8. you can tail your logs on CMD
-
+6. Once done while still in your project's root directory run the following command: python3 Post_Data.py
 
 

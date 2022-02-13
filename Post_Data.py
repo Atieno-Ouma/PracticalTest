@@ -1,14 +1,26 @@
 import requests
-
+import random2
 auth = {
     "user": "admin",
     "password": "district"
 }
 url = "https://play.dhis2.org/2.34.9/api/29/dataSets/GoQawwqec4j"
 
-payload={'Beginning Balance': '1000,100,700',
-'Quality Dispenced': '450,300,500',
-'Closing Balance': '550,700,200'}
+payload=[
+    {'Beginning Balance': 1000,
+'Quality Dispenced': 450,
+'Closing Balance': 550},
+
+{'Beginning Balance': 1000,
+'Quality Dispenced': 450,
+'Closing Balance': 550},
+
+{'Beginning Balance': 1000,
+'Quality Dispenced': 450,
+'Closing Balance': 550}
+]
+
+
 files=[
 
 ]

@@ -1,10 +1,11 @@
 import requests
 import random2
+import json
 auth = {
     "user": "admin",
     "password": "district"
 }
-url = "https://play.dhis2.org/2.34.9/api/29/dataSets/GoQawwqec4j"
+url = "http://play.dhis2.org/demo/api/24/dataValueSets?dataSet=GoQawwqec4j&completeDate=2024-06-06&period=LAST_QUARTER&orgUnit=bVo3BRA2D2a"
 
 payload=[
     {'Beginning Balance': 1000,
@@ -25,8 +26,8 @@ files=[
 
 ]
 headers = {
-  'Date': '2022-02-09',
-  'Cookie': 'JSESSIONID=3CD9B0BC2EF1773ABB317112AB8F536C'
+  'Authorization': 'Basic YWRtaW46ZGlzdHJpY3Q=',
+  'Content-Type': 'text/plain'
 }
 
 response = requests.request("POST", url, headers=headers, data=payload, files=files)
